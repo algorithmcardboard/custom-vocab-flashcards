@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.rajegannathan.grewordcards"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="in.rajegannathan.grewordcards.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.rajegannathan.grewordcards.ListWordsActivity"
+            android:label="@string/title_activity_list_words"
+            android:parentActivityName="in.rajegannathan.grewordcards.HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.rajegannathan.grewordcards.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.rajegannathan.grewordcards.FlashCardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_flash_card"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        
+<!--         <service android:name="in.rajegannathan.grewordcards.service.WordnikService"
+            android:exported="false"></service> -->
+    </application>
+
+</manifest>
