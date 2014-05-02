@@ -14,20 +14,6 @@ public class WordnikDownloader {
 	private WordApi wordApi;
 	private static Properties props;
 	private static final Logger logger = Logger.getLogger(WordnikDownloader.class.getName());
-	
-//	static{
-//		props = new Properties();
-//		try {
-//			FileInputStream fn = new FileInputStream("local.properties");
-//			props.load(fn);
-//		} catch (FileNotFoundException e) {
-//			logger.info("no file found");
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//			logger.info("unable to read file");
-//		}
-//	}
 
 	public WordnikDownloader(){
 		wordApi = new WordApi();
