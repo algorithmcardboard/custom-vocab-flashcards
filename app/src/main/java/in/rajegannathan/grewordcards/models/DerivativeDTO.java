@@ -2,8 +2,14 @@ package in.rajegannathan.grewordcards.models;
 
 public class DerivativeDTO {
 
-	public String getDisplayText() {
-		return "Downloaded derivative";
+    private final String relatedWords;
+
+    public DerivativeDTO(String relatedWords) {
+        this.relatedWords = relatedWords;
+    }
+
+    public String getDisplayText() {
+		return relatedWords;
 	}
 
 }

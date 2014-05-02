@@ -8,6 +8,11 @@
       </filter>
     </filters>
   </component>
+  <component name="AndroidLayoutPreviewToolWindow">
+    <option name="state">
+      <GlobalState />
+    </option>
+  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
@@ -92,7 +97,7 @@
       <file leaf-file-name="MeaningDownloader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/MeaningDownloader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="52" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+            <state line="21" column="41" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="680">
               <folding>
                 <element signature="e#538#565#0" expanded="true" />
               </folding>
@@ -100,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordnikDownloader.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="WordnikDownloader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/WordnikDownloader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="63" selection-start="731" selection-end="731" vertical-scroll-proportion="0.59292036" vertical-offset="173" max-vertical-offset="799">
+            <state line="76" column="13" selection-start="2453" selection-end="2453" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,10 +116,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordApi.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wordnik/wordnik-android-client/4.0/2fa77b9f48d71d79b9850193284a8e42e41c2e23/wordnik-android-client-4.0-sources.jar!/com/wordnik/client/api/WordApi.java">
+      <file leaf-file-name="WordnikCacheObject.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/WordnikCacheObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="7" selection-start="5732" selection-end="5732" vertical-scroll-proportion="0.0" vertical-offset="1622" max-vertical-offset="7854">
+            <state line="73" column="16" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.83112586" vertical-offset="450" max-vertical-offset="1326">
+              <folding>
+                <element signature="e#1451#1463#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsageDownloader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/UsageDownloader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="25" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DerivativeDownloader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/DerivativeDownloader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="25" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="748">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EtymologyDownloader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/EtymologyDownloader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="57" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0" vertical-offset="188" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -138,7 +172,7 @@
     <option name="recentTasks">
       <list>
         <ExternalTaskExecutionInfo>
-          <option name="executorId" value="Debug" />
+          <option name="executorId" value="Run" />
           <option name="settings">
             <ExternalSystemSettings>
               <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
@@ -152,7 +186,7 @@
           </option>
         </ExternalTaskExecutionInfo>
         <ExternalTaskExecutionInfo>
-          <option name="executorId" value="Run" />
+          <option name="executorId" value="Debug" />
           <option name="settings">
             <ExternalSystemSettings>
               <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
@@ -819,9 +853,23 @@
       <list>
         <option value="$PROJECT_DIR$/local.properties" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_flash_card.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/fragments/HomeFragment.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/WordnikDownloader.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/MeaningDTO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/meaning_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/MeaningDownloader.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/EtymologyDTO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/DerivativeDTO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/WordnikDownloader.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/UsageDTO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/etymology_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/usage_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/derivative_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/UsageDownloader.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/DerivativeDownloader.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/EtymologyDownloader.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/WordnikCacheObject.java" />
       </list>
     </option>
   </component>
@@ -895,8 +943,9 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="2B50000600000001015D93A506017018" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
+    <property name="LayoutCode.rearrangeEntriesXML" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.CustomVocabularyFlashCards:app [buildDependents]">
+  <component name="RunManager" selected="Android Application.app">
     <configuration default="false" name="CustomVocabularyFlashCards:app [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
@@ -920,6 +969,15 @@
       <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
       <ConfigurationWrapper RunnerId="ExternalSystemTaskDebugRunner" />
       <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -1108,31 +1166,52 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40952381" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25755286" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25755286" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40952381" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25755286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25755286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1288,11 +1367,6 @@
         <state line="85" column="0" selection-start="2564" selection-end="2564" vertical-scroll-proportion="0.5281457" vertical-offset="599" max-vertical-offset="4879" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="16" selection-start="426" selection-end="426" vertical-scroll-proportion="0.36589405" vertical-offset="0" max-vertical-offset="901">
@@ -1328,13 +1402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CustomVocabularyFlashCards.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="59" selection-start="403" selection-end="403" vertical-scroll-proportion="0.08629441" vertical-offset="0" max-vertical-offset="591">
@@ -1349,27 +1416,208 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/MeaningDownloader.java">
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="52" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+        <state line="14" column="34" selection-start="525" selection-end="525" vertical-scroll-proportion="-1.1067709" vertical-offset="663" max-vertical-offset="1632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_flash_card.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.5682451" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/cache/WordnikResultCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="38" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="646">
           <folding>
-            <element signature="e#538#565#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#805#806#0" expanded="false" />
+            <element signature="e#830#831#0" expanded="false" />
+            <element signature="e#1056#1166#0" expanded="false" />
+            <element signature="e#1160#1161#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/WordDetailsDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="21" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2329">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/fragments/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="1" selection-start="474" selection-end="474" vertical-scroll-proportion="0.33774835" vertical-offset="0" max-vertical-offset="604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/MeaningDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="26" selection-start="257" selection-end="257" vertical-scroll-proportion="0.30960265" vertical-offset="0" max-vertical-offset="604">
+          <folding>
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/meaning_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="24" selection-start="535" selection-end="535" vertical-scroll-proportion="0.41105354" vertical-offset="0" max-vertical-offset="579">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/EtymologyDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="275" selection-end="275" vertical-scroll-proportion="0.30960265" vertical-offset="0" max-vertical-offset="604">
+          <folding>
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/DerivativeDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="272" selection-end="272" vertical-scroll-proportion="0.30960265" vertical-offset="0" max-vertical-offset="604">
+          <folding>
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/UsageDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="29" selection-start="247" selection-end="268" vertical-scroll-proportion="0.30960265" vertical-offset="0" max-vertical-offset="604">
+          <folding>
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wordnik/wordnik-android-client/4.0/2fa77b9f48d71d79b9850193284a8e42e41c2e23/wordnik-android-client-4.0-sources.jar!/com/wordnik/client/api/WordApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="7" selection-start="5732" selection-end="5732" vertical-scroll-proportion="0.0" vertical-offset="1622" max-vertical-offset="7854">
+        <state line="37" column="30" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.33333334" vertical-offset="109" max-vertical-offset="7854">
+          <folding>
+            <element signature="e#4679#4695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/etymology_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="24" selection-start="537" selection-end="537" vertical-scroll-proportion="-9.52" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/usage_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="24" selection-start="533" selection-end="533" vertical-scroll-proportion="-9.52" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wordnik/wordnik-android-client/4.0/2fa77b9f48d71d79b9850193284a8e42e41c2e23/wordnik-android-client-4.0-sources.jar!/com/wordnik/client/common/ApiInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="54" selection-start="6158" selection-end="6158" vertical-scroll-proportion="0.2822823" vertical-offset="2439" max-vertical-offset="3876">
+          <folding>
+            <element signature="e#3990#4006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/derivative_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="549" selection-end="549" vertical-scroll-proportion="0.7943925" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/MeaningDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="41" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="680">
+          <folding>
+            <element signature="e#538#565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/UsageDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="25" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/DerivativeDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="25" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/EtymologyDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="57" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0" vertical-offset="188" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/async/WordnikDownloader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="63" selection-start="731" selection-end="731" vertical-scroll-proportion="0.59292036" vertical-offset="173" max-vertical-offset="799">
+        <state line="76" column="13" selection-start="2453" selection-end="2453" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/rajegannathan/grewordcards/models/WordnikCacheObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="16" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.83112586" vertical-offset="450" max-vertical-offset="1326">
+          <folding>
+            <element signature="e#1451#1463#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -27,10 +27,12 @@ public class MeaningDownloader implements Callable<MeaningDTO>{
 	public MeaningDTO call() throws Exception {
 		logger.info("in MeaningDownloader.  About to sleep for 300 milliseconds");
         List<Definition> meanings = downloader.getMeaning(this.word, NUM_MEANINGS);
+        StringBuilder meaning = new StringBuilder();
         for(Definition defn: meanings){
             logger.info(defn.getText());
+            meaning.append(defn.getText()).append("\r\n\r\n");
         }
-        MeaningDTO meaningDTO = new MeaningDTO();
+        MeaningDTO meaningDTO = new MeaningDTO(meaning.toString());
  		logger.info("returning from meaningDownloader");
 		return meaningDTO;
 	}

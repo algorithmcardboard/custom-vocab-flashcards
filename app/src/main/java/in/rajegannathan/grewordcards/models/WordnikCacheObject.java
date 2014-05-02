@@ -29,7 +29,7 @@ public class WordnikCacheObject {
 	private WordnikCacheObject(){}
 	
 	public WordnikCacheObject(String word){
-		this.word = word;
+		this.word = word.toLowerCase();
 	}
 	
 	public String getWord() {
