@@ -22,7 +22,7 @@ public class EtymologyDownloader implements Callable<EtymologyDTO>{
 
 	@Override
 	public EtymologyDTO call() throws Exception {
-        Thread.sleep(200L);
+        Thread.sleep(100L);
 		logger.info("in Etymologydownloaader's call method");
         List<String> etymologies = downloader.getEtymology(word);
         StringBuilder etymologyText = new StringBuilder();

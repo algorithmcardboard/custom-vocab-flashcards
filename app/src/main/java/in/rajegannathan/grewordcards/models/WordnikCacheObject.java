@@ -70,13 +70,10 @@ public class WordnikCacheObject {
 		new Thread(derivativeTask).start();
 		
 		try {
-			while(this.meaning == null || this.usage == null || this.derivative == null || this.etymology == null){
-				this.meaning = meaningTask.get(); //100L, TimeUnit.MILLISECONDS
-				this.usage = usageTask.get(); // 100L, TimeUnit.MILLISECONDS
-				this.derivative = derivativeTask.get();// 100L, TimeUnit.MILLISECONDS
-				this.etymology = etymologyTask.get(); //100L, TimeUnit.MILLISECONDS
-			}
-			
+            this.meaning = meaningTask.get(); //100L, TimeUnit.MILLISECONDS
+			this.usage = usageTask.get(); // 100L, TimeUnit.MILLISECONDS
+			this.derivative = derivativeTask.get();// 100L, TimeUnit.MILLISECONDS
+			this.etymology = etymologyTask.get(); //100L, TimeUnit.MILLISECONDS
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		} catch (ExecutionException e) {

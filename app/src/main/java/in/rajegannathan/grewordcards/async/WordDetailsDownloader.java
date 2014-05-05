@@ -59,7 +59,6 @@ public class WordDetailsDownloader extends Thread {
 						Thread.sleep(DOWNLOADER_SLEEP_TIME);
 					} catch (InterruptedException e) {
 					}
-					logger.warning("thread interrupted. Mostly due to activity exit");
 				}
 				logger.info("in downloadThread's handle message" + word);
 			}

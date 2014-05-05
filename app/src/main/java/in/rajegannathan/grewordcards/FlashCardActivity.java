@@ -45,8 +45,8 @@ public class FlashCardActivity extends Activity {
 		}
 
 		private static final EnumSet<Fragments> allFragments = EnumSet.allOf(Fragments.class);
-		public static final Fragments LAST_FRAGMENT = DerivativeScreen;
-		public static final Fragments FIRST_FRAGMENT = WordScreen;
+        public static final Fragments LAST_FRAGMENT = DerivativeScreen;
+        public static final Fragments FIRST_FRAGMENT = WordScreen;
 
 		public static final int TOTAL_FRAGMENTS = allFragments.size();
 
@@ -100,12 +100,15 @@ public class FlashCardActivity extends Activity {
 		case WordDetailsDownloader.MEANING:
 			logger.info("Setting text in meaning fragment");
 			meaningFragment.setMeaning(msg.obj.toString());
+            break;
 		case WordDetailsDownloader.DERIVATIVE:
 			logger.info("Setting text in derivative fragment");
 			derivativeFragment.setDerivativeText(msg.obj.toString());
+            break;
 		case WordDetailsDownloader.ETYMOLOGY:
 			logger.info("Setting text in etymology fragment");
 			etymologyFragment.setEtymologyText(msg.obj.toString());
+            break;
 		case WordDetailsDownloader.USAGE:
 			logger.info("Setting text in usage fragment");
 			usageFragment.setUsage(msg.obj.toString());
@@ -214,14 +217,16 @@ public class FlashCardActivity extends Activity {
 
 	private void showPreviousFragment() {
 		int oldScreen = currentScreen;
-		currentScreen = (currentScreen - 1 + Fragments.TOTAL_FRAGMENTS) % Fragments.TOTAL_FRAGMENTS;
-		if (oldScreen == Fragments.FIRST_FRAGMENT.position && currentScreen == Fragments.LAST_FRAGMENT.position) {
-			currentScreen = Fragments.FIRST_FRAGMENT.position;
-		}
+        currentScreen = (currentScreen - 1 + Fragments.TOTAL_FRAGMENTS) % Fragments.TOTAL_FRAGMENTS;
+
+        if(oldScreen == Fragments.FIRST_FRAGMENT.position && currentScreen == Fragments.LAST_FRAGMENT.position){
+            currentScreen = Fragments.FIRST_FRAGMENT.position;
+            cursor.moveToPrevious();
+        }
+
 		logger.info("CurrentScreen " + currentScreen + " current fragment " + Fragments.getFragment(currentScreen));
 
 		if (currentScreen == Fragments.FIRST_FRAGMENT.position) {
-			cursor.moveToPrevious();
 			if (!cursor.isBeforeFirst()) {
 				populateWordDetails(cursor.getString(1));
 				wordFragment.setCurrentWord(cursor.getString(1));

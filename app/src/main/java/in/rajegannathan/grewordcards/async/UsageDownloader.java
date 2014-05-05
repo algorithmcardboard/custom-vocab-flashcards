@@ -24,7 +24,7 @@ public class UsageDownloader implements Callable<UsageDTO>{
 
 	@Override
 	public UsageDTO call() throws Exception {
-        Thread.sleep(100L);
+        Thread.sleep(200L);
 		logger.info("in usageDownloader's call method");
         ExampleSearchResults usage = downloader.getUsage(word);
         StringBuffer exampleString = new StringBuffer();
