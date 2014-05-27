@@ -6,6 +6,7 @@ import in.rajegannathan.grewordcards.localdb.DBHelper;
 import java.util.logging.Logger;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -18,18 +19,20 @@ import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
+
 public class ListWordsActivity extends ListActivity {
 
 	private static final Logger logger = Logger
 			.getLogger(ListWordsActivity.class.getName());
 	private DBHelper mDbHelper;
 	private SimpleCursorAdapter mAdapter;
+    public final static String EXTRA_MESSAGE = "POSITION";
 	
 	private Cursor getCursorForListView(){
 		SQLiteDatabase db = mDbHelper.getReadableDatabase();
 		String[] projection = { BaseColumns._ID, Words.COLUMN_WORD,
 				Words.COLUMN_VIEWS };
-		String sortOrder = Words.COLUMN_WORD + " ASC";
+		String sortOrder = Words.COLUMN_VIEWS + " ASC";
 		Cursor cursor = db.query(Words.TABLE_NAME, projection, null, null,
 				null, null, sortOrder);
 		return cursor;
@@ -69,8 +72,17 @@ public class ListWordsActivity extends ListActivity {
 			logger.info("listview is "+listView.toString());
 		}*/
 	}
-	
-	@Override
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        super.onListItemClick(l, v, position, id);
+        Intent intent = new Intent(this, FlashCardActivity.class);
+        intent.putExtra(EXTRA_MESSAGE , position);
+        startActivity(intent);
+
+    }
+
+    @Override
 	public void onCreateContextMenu(android.view.ContextMenu menu, View v, android.view.ContextMenu.ContextMenuInfo menuInfo) {
 		logger.info("in create context view method");
 		super.onCreateContextMenu(menu, v, menuInfo);

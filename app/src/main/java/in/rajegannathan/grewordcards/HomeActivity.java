@@ -89,7 +89,7 @@ public class HomeActivity extends Activity {
 	
 	public void playFlashCards(View view) {
 		Intent intent = new Intent(this, FlashCardActivity.class);
-		startActivity(intent);
+        startActivity(intent);
 	}
 
 	public void parentClick(View view) {

@@ -17,6 +17,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -29,7 +30,9 @@ import android.view.MotionEvent;
 
 public class FlashCardActivity extends Activity {
 
-	enum Fragments {
+    int startPostion;
+
+    enum Fragments {
 		WordScreen("WordScreen", 0, 0), MeaningScreen("MeaningScreen", 0, 1), UsageScreen("UsageScreen", 0, 2), EtymologyScreen(
 				"EtymologyScreen", 0, 3), DerivativeScreen("DerivativeScreen", 0, 4);
 
@@ -135,6 +138,9 @@ public class FlashCardActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+        startPostion = intent.getIntExtra(ListWordsActivity.EXTRA_MESSAGE,0);
+
 		setContentView(R.layout.activity_flash_card);
 		boundaryFragment = new BoundaryFragment();
 		changeFragment(boundaryFragment);
@@ -165,7 +171,7 @@ public class FlashCardActivity extends Activity {
 
 		if (cursor.getCount() != 0) {
 			interrupt = false;
-			
+            cursor.move(startPostion);
 			wordFragment.setCurrentWord(cursor.getString(1));
 			logger.info("swapping to wordFragment" + cursor.getString(1));
 			changeFragment(wordFragment);
@@ -174,6 +180,7 @@ public class FlashCardActivity extends Activity {
 			logger.info("changing boundaryfragment text");
 			boundaryFragment.setText("No words added.");
 		}
+
 
 		logger.info("main activity thread is "+Thread.currentThread().getId());
 		super.onPostCreate(savedInstanceState);
