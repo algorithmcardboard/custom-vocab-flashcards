@@ -32,7 +32,7 @@ public class ListWordsActivity extends ListActivity {
 		SQLiteDatabase db = mDbHelper.getReadableDatabase();
 		String[] projection = { BaseColumns._ID, Words.COLUMN_WORD,
 				Words.COLUMN_VIEWS };
-		String sortOrder = Words.COLUMN_VIEWS + " ASC";
+		String sortOrder = Words.COLUMN_CREATED_AT + " ASC";
 		Cursor cursor = db.query(Words.TABLE_NAME, projection, null, null,
 				null, null, sortOrder);
 		return cursor;
