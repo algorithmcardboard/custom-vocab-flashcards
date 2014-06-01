@@ -33,9 +33,13 @@ public class ListWordsActivity extends ListActivity {
 		String[] projection = { BaseColumns._ID, Words.COLUMN_WORD,
 				Words.COLUMN_VIEWS };
 		String sortOrder = Words.COLUMN_CREATED_AT + " ASC";
-		Cursor cursor = db.query(Words.TABLE_NAME, projection, null, null,
-				null, null, sortOrder);
-		return cursor;
+		//Cursor cursor = db.query(Words.TABLE_NAME, projection, null, null,
+				//null, null, sortOrder);
+        Cursor cursor = db.rawQuery("Select ( Select COUNT(0) from " + Words.TABLE_NAME +
+                        " w Where w._id < w2._id ) as 'RN' , "+Words.COLUMN_WORD + " from "+
+                        Words.TABLE_NAME +" w2 ORDER BY "+ Words.COLUMN_CREATED_AT  + "ASC", null);
+
+        return cursor;
 	}
 
 	@Override
@@ -44,10 +48,12 @@ public class ListWordsActivity extends ListActivity {
 
 		mDbHelper = new DBHelper(getApplicationContext());
 
-		String[] fromColumns = { Words.COLUMN_WORD };
-		int[] toViews = { R.id.singleWord };
-		
-		Cursor cursor = getCursorForListView();
+        Cursor cursor = getCursorForListView();
+
+
+		String[] fromColumns = { Words.COLUMN_WORD , "RN" };
+		int[] toViews = { R.id.singleWord , R.id.index};
+
 		mAdapter = new SimpleCursorAdapter(this,
 				R.layout.fragment_list_words, cursor, fromColumns, toViews, 0);
 
